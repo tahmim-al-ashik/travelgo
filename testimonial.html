@@ -24,6 +24,8 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+ 
+
 </head>
 
 <body>
@@ -80,17 +82,24 @@
                         <a href="service.html" class="nav-item nav-link">Services</a>
                         <a href="package.html" class="nav-item nav-link">Tour Packages</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                              
+                                <a href="single.html" class="dropdown-item">Package Detail</a>
                                 <a href="destination.html" class="dropdown-item">Destination</a>
                                 <a href="guide.html" class="dropdown-item">Travel Guides</a>
-                                <a href="testimonial.html" class="dropdown-item active">Testimonial</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        <a href="login.html" class="nav-item nav-link">Login</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Action</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="login.html" class="dropdown-item">Login</a>
+                                <a href="registration.html" class="dropdown-item">Registration</a>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -159,13 +168,107 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
+                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;"  data-toggle="modal" data-target="#invoiceModal">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Booking End -->
+
+    <div class="modal" id="invoiceModal" tabindex="-1" role="dialog" aria-labelledby="invoiceModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="invoiceModalLabel">Invoice</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Invoice content goes here -->
+              <div class="row">
+                <div class="col-md-6">
+                  <p><strong>Invoice Number:</strong> INV-2022001</p>
+                 
+                </div>
+                <div class="col-md-6">
+                    <p><strong>Date:</strong> January 16, 2024</p>
+                  <p><strong>Billed To:</strong> John Doe</p>
+                
+                </div>
+              </div>
+
+
+    <div class="container">
+        <h2>Travel Details</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Destination Name</th>
+                <th>Start Date</th>
+                <th>Return Date</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Destination 1</td>
+                <td>2024-01-01</td>
+                <td>2024-01-10</td>
+                <td>$500</td>
+              </tr>
+              <tr>
+                <td>Destination 2</td>
+                <td>2024-02-01</td>
+                <td>2024-02-10</td>
+                <td>$700</td>
+              </tr>
+              <!-- Add more rows as needed -->
+      
+              <!-- Total row -->
+              <tr>
+                <td colspan="3" class="text-right"><strong>Total:</strong></td>
+                <td><strong>$1200</strong></td>
+              </tr>
+              <tr>
+                <td colspan="2"> <form>
+                    <div class="form-row align-items-center">
+                      <div class="col-auto">
+                        <label class="sr-only" for="referralId">Referral ID</label>
+                        <input type="text" class="form-control mb-2" id="referralId" placeholder="Enter Referral ID">
+                      </div>
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-primary mb-2">Submit</button>
+                      </div>
+                    </div>
+                  </form> </td>
+           
+                <td><strong>discount</strong></td>
+                <td>$700</td>
+              </tr>
+              <td colspan="3" class="text-right"><strong>Grand Total</strong></td>
+              <td> 500$</td>
+              <tr>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+
+              <!-- Additional invoice details -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Pay Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
 
 
     <!-- Testimonial Start -->

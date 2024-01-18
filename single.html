@@ -24,6 +24,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -80,17 +81,24 @@
                         <a href="service.html" class="nav-item nav-link">Services</a>
                         <a href="package.html" class="nav-item nav-link">Tour Packages</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item active">Blog Detail</a>
+                              
+                                <a href="single.html" class="dropdown-item">Package Detail</a>
                                 <a href="destination.html" class="dropdown-item">Destination</a>
                                 <a href="guide.html" class="dropdown-item">Travel Guides</a>
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        <a href="login.html" class="nav-item nav-link">Login</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Action</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="login.html" class="dropdown-item">Login</a>
+                                <a href="registration.html" class="dropdown-item">Registration</a>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -103,69 +111,162 @@
     <div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Blog Detail</h3>
+                <h3 class="display-4 text-white text-uppercase">Package Detail</h3>
                 <div class="d-inline-flex text-white">
                     <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Blog Detail</p>
+                    <p class="m-0 text-uppercase">Package Detail</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- Header End -->
 
-
-    <!-- Booking Start -->
-    <div class="container-fluid booking mt-5 pb-5">
-        <div class="container pb-5">
-            <div class="bg-light shadow" style="padding: 30px;">
-                <div class="row align-items-center" style="min-height: 60px;">
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Destination</option>
-                                        <option value="1">Destination 1</option>
-                                        <option value="2">Destination 1</option>
-                                        <option value="3">Destination 1</option>
-                                    </select>
-                                </div>
+   <!-- Booking Start -->
+   <div class="container-fluid booking mt-5 pb-5">
+    <div class="container pb-5">
+        <div class="bg-light shadow" style="padding: 30px;">
+            <div class="row align-items-center" style="min-height: 60px;">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <select class="custom-select px-4" style="height: 47px;">
+                                    <option selected>Destination</option>
+                                    <option value="1">Destination 1</option>
+                                    <option value="2">Destination 1</option>
+                                    <option value="3">Destination 1</option>
+                                </select>
                             </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Depart Date" data-target="#date1" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Return Date" data-target="#date2" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Duration</option>
-                                        <option value="1">Duration 1</option>
-                                        <option value="2">Duration 1</option>
-                                        <option value="3">Duration 1</option>
-                                    </select>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <div class="date" id="date1" data-target-input="nearest">
+                                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Depart Date" data-target="#date1" data-toggle="datetimepicker"/>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <div class="date" id="date2" data-target-input="nearest">
+                                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Return Date" data-target="#date2" data-toggle="datetimepicker"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <select class="custom-select px-4" style="height: 47px;">
+                                    <option selected>Duration</option>
+                                    <option value="1">Duration 1</option>
+                                    <option value="2">Duration 1</option>
+                                    <option value="3">Duration 1</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
-                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;"  data-toggle="modal" data-target="#invoiceModal">Submit</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Booking End -->
+</div>
+<!-- Booking End -->
+
+<div class="modal" id="invoiceModal" tabindex="-1" role="dialog" aria-labelledby="invoiceModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="invoiceModalLabel">Invoice</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Invoice content goes here -->
+          <div class="row">
+            <div class="col-md-6">
+              <p><strong>Invoice Number:</strong> INV-2022001</p>
+             
+            </div>
+            <div class="col-md-6">
+                <p><strong>Date:</strong> January 16, 2024</p>
+              <p><strong>Billed To:</strong> John Doe</p>
+            
+            </div>
+          </div>
+
+
+<div class="container">
+    <h2>Travel Details</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Destination Name</th>
+            <th>Start Date</th>
+            <th>Return Date</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Destination 1</td>
+            <td>2024-01-01</td>
+            <td>2024-01-10</td>
+            <td>$500</td>
+          </tr>
+          <tr>
+            <td>Destination 2</td>
+            <td>2024-02-01</td>
+            <td>2024-02-10</td>
+            <td>$700</td>
+          </tr>
+          <!-- Add more rows as needed -->
+  
+          <!-- Total row -->
+          <tr>
+            <td colspan="3" class="text-right"><strong>Total:</strong></td>
+            <td><strong>$1200</strong></td>
+          </tr>
+          <tr>
+            <td colspan="2"> <form>
+                <div class="form-row align-items-center">
+                  <div class="col-auto">
+                    <label class="sr-only" for="referralId">Referral ID</label>
+                    <input type="text" class="form-control mb-2" id="referralId" placeholder="Enter Referral ID">
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-outline-primary mb-2">Submit</button>
+                  </div>
+                </div>
+              </form> </td>
+       
+            <td><strong>discount</strong></td>
+            <td>$700</td>
+          </tr>
+          <td colspan="3" class="text-right"><strong>Grand Total</strong></td>
+          <td> 500$</td>
+          <tr>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+
+          <!-- Additional invoice details -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Pay Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 
     <!-- Blog Start -->
@@ -173,7 +274,7 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-8">
-                    <!-- Blog Detail Start -->
+                    <!-- Package Detail Start -->
                     <div class="pb-3">
                         <div class="blog-item">
                             <div class="position-relative">
@@ -230,7 +331,7 @@
                                 aliquyam et ut.</p>
                         </div>
                     </div>
-                    <!-- Blog Detail End -->
+                    <!-- Package Detail End -->
     
                     <!-- Comment List Start -->
                     <div class="bg-white" style="padding: 30px; margin-bottom: 30px;">
@@ -324,92 +425,6 @@
                             <a class="text-primary px-2" href="">
                                 <i class="fab fa-youtube"></i>
                             </a>
-                        </div>
-                    </div>
-    
-                    <!-- Search Form -->
-                    <div class="mb-5">
-                        <div class="bg-white" style="padding: 30px;">
-                            <div class="input-group">
-                                <input type="text" class="form-control p-4" placeholder="Keyword">
-                                <div class="input-group-append">
-                                    <span class="input-group-text bg-primary border-primary text-white"><i
-                                            class="fa fa-search"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Category List -->
-                    <div class="mb-5">
-                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Categories</h4>
-                        <div class="bg-white" style="padding: 30px;">
-                            <ul class="list-inline m-0">
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Web
-                                        Design</a>
-                                    <span class="badge badge-primary badge-pill">150</span>
-                                </li>
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Web
-                                        Development</a>
-                                    <span class="badge badge-primary badge-pill">131</span>
-                                </li>
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i
-                                            class="fa fa-angle-right text-primary mr-2"></i>Online Marketing</a>
-                                    <span class="badge badge-primary badge-pill">78</span>
-                                </li>
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i
-                                            class="fa fa-angle-right text-primary mr-2"></i>Keyword Research</a>
-                                    <span class="badge badge-primary badge-pill">56</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i
-                                            class="fa fa-angle-right text-primary mr-2"></i>Email Marketing</a>
-                                    <span class="badge badge-primary badge-pill">98</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-    
-                    <!-- Recent Post -->
-                    <div class="mb-5">
-                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Post</h4>
-                        <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
-                            <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
-                            <div class="pl-3">
-                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
-                            </div>
-                        </a>
-                        <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
-                            <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
-                            <div class="pl-3">
-                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
-                            </div>
-                        </a>
-                        <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
-                            <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
-                            <div class="pl-3">
-                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
-                            </div>
-                        </a>
-                    </div>
-    
-                    <!-- Tag Cloud -->
-                    <div class="mb-5">
-                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Tag Cloud</h4>
-                        <div class="d-flex flex-wrap m-n1">
-                            <a href="" class="btn btn-light m-1">Design</a>
-                            <a href="" class="btn btn-light m-1">Development</a>
-                            <a href="" class="btn btn-light m-1">Marketing</a>
-                            <a href="" class="btn btn-light m-1">SEO</a>
-                            <a href="" class="btn btn-light m-1">Writing</a>
-                            <a href="" class="btn btn-light m-1">Consulting</a>
                         </div>
                     </div>
                 </div>
